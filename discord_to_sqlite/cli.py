@@ -22,3 +22,6 @@ def cli(db_path, zip_path):
     db = sqlite_utils.Database(db_path)
     zf = zipfile.ZipFile(zip_path)
     utils.save_all(db, zf)
+
+if __name__ == "__main__":
+    cli()

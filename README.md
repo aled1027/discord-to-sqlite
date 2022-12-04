@@ -20,7 +20,7 @@ This tool currently supports importing messages, friends, servers and channels. 
 
 Import the downloaded `package.zip` file with the following command:
 
-    $ poetry run discord-to-sqlite discord.db path/to/package.zip
+    $ poetry run python discord_to_sqlite/cli.py discord.db package.zip
 
 This will create a database file called `discord.db` if one does not already exist. 
 
