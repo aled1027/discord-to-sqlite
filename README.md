@@ -24,6 +24,10 @@ Import the downloaded `package.zip` file with the following command:
 
 This will create a database file called `discord.db` if one does not already exist. 
 
+You can enable [sqlite full-text search](https://docs.datasette.io/en/stable/full_text_search.html) with this command:
+
+    $ poetry run sqlite-utils enable-fts discord.db messages contents
+
 ## Browsing your data with Datasette
 
 Once you have imported Discord data into a SQLite database file you can browse your data using [Datasette](https://github.com/simonw/datasette). Install Datasette like so:
