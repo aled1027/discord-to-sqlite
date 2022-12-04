@@ -1,10 +1,16 @@
+Forked from [https://github.com/troennes/discord-to-sqlite](https://github.com/troennes/discord-to-sqlite).
+
+And I made small edits post-fork.
+
 # discord-to-sqlite
 
 Import data from your Discord Data Package into a SQLite database.
 
 ## How to install
 
-    $ pip install discord-to-sqlite
+    $ git clone <repo>
+    $ cd <repo>
+    $ poetry install
 
 First, request [your Discord data]( https://support.discord.com/hc/en-us/articles/360004027692-Requesting-a-Copy-of-your-Data) - wait for the email and download the zip file.
 
@@ -14,7 +20,7 @@ This tool currently supports importing messages, friends, servers and channels. 
 
 Import the downloaded `package.zip` file with the following command:
 
-    $ discord-to-sqlite discord.db path/to/package.zip
+    $ poetry run discord-to-sqlite discord.db path/to/package.zip
 
 This will create a database file called `discord.db` if one does not already exist. 
 
